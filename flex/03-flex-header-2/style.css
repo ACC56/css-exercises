@@ -8,12 +8,39 @@ body {
   font-family: Besley, serif;
 }
 
-.header {
-  background: white;
+.navbar {
+  background: black;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
 }
 
+.logo-links-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  margin: 8px;
+}
+.profile-notification-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: white;
+  margin: 8px;
+  flex-direction: row;
+
+}
+.logo {
+  color: rebeccapurple;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+}
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -22,19 +49,15 @@ body {
   height: 48px;
 }
 
-.logo {
-  color: rebeccapurple;
-  font-size: 32px;
-  font-weight: 900;
-  font-style: italic;
-}
-
 button {
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  max-width: 250px;
+  min-width: auto;
+  max-height: 40px;
 }
 
 a {
@@ -43,6 +66,13 @@ a {
   color: rebeccapurple;
 }
 
+.nav {
+display: flex;
+flex-direction: row;
+justify-items: flex-start;
+margin: 5px;
+padding: 5px;
+}
 ul {
   list-style-type: none;
 }
